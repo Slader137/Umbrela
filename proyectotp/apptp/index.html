@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    	{% for obrero in obrero_list %}
+    	    <h2> {{ Netbook.modelo }} <b>{{ Netbook.color }}</b> </h2>
+    	    <p> {{ Netbook.tamaño }} </p>
+            {% if obrero.nacimiento %}
+              <p> {{obrero.nacimiento}}
+            <div>
+{%if Netbook.foto %} 
+                <img src="{{ Netbook.foto.url }}" alt="{{ Netbook.modelo}} {{Netbook.color}}{{Netbook tamaño}}">
+                { if Netbook.foto%}
+
+            </div>
+        {% endfor %}
+    </body>
+</html>
