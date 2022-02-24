@@ -3,17 +3,17 @@
 
     </head>
     <body>
-    	{% for obrero in obrero_list %}
-    	    <h2> {{ Netbook.modelo }} <b>{{ Netbook.color }}</b> </h2>
-    	    <p> {{ Netbook.tamaño }} </p>
-            {% if obrero.nacimiento %}
-              <p> {{obrero.nacimiento}}
+    	{% for persona in persona_list %}
+    	    <h2>Nombre: {{ persona.nombre }} <b> DNI: {{ persona.dni }}</b> </h2>
+            <p>Fecha de nacimiento: {{persona.nacimiento}} </p>
+            <p> Sexo: {{persona.sexo}} </p>
+            
             <div>
-{%if Netbook.foto %} 
-                <img src="{{ Netbook.foto.url }}" alt="{{ Netbook.modelo}} {{Netbook.color}}{{Netbook.tamaño}}">
-                { if Netbook.foto%}
-
+                <img src="{{BOB.jpg}}"<b>Telefono: {{ persona.telefono }}</b>
             </div>
-        {% endfor %}
+            {% endfor %}
+ 
+
+
     </body>
 </html>
